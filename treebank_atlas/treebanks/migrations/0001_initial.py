@@ -8,20 +8,30 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Treebank',
+            name="Treebank",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('urn', models.CharField(max_length=255)),
-                ('name', models.CharField(blank=True, max_length=255, null=True)),
-                ('metadata', django.contrib.postgres.fields.jsonb.JSONField(blank=True, default=dict, encoder='')),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("urn", models.CharField(max_length=255)),
+                ("name", models.CharField(blank=True, max_length=255, null=True)),
+                (
+                    "metadata",
+                    django.contrib.postgres.fields.jsonb.JSONField(
+                        blank=True, default=dict, encoder=""
+                    ),
+                ),
             ],
-            options={
-                'ordering': ['urn'],
-            },
-        ),
+            options={"ordering": ["urn"]},
+        )
     ]
