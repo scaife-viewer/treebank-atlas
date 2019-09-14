@@ -1,0 +1,13 @@
+{
+  "treebanks": [
+    {
+      "urn": "urn:cts:greekLit:tlg0059.tlg002.gorman",
+      "content_path": "gorman-trees/plato-apology-17a-42a.xml",
+      "metadata": {
+        "work_title": "Apology",
+        "work_author": "Plato",
+        "work_urn": "urn:cts:greekLit:tlg0059.tlg002.perseus-grc1"
+      }
+    }
+  ]
+}
